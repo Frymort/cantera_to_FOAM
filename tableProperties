@@ -1,0 +1,36 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.1.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      tableProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+interpolationType       D2LinearInterpolation;
+
+operatingPressure       1e5;
+
+PVPoints		501;
+
+varPVPoints             11;
+
+PVmax                   2.58975;
+
+PV                      (CO2 H2O);
+
+PVfactor                (0.2 0.3);
+
+useVariancePV           true;
+
+useSpecies              false;
+
+// ************************************************************************* //
